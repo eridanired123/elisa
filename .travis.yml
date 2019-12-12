@@ -9,7 +9,7 @@ before_install:
 
 install:
   - sudo apt install qtbase5-dev qtmultimedia5-dev qtdeclarative5-dev libqt5svg5-dev libkf5i18n-dev libkf5filemetadata-dev baloo-kf5-dev libkf5config-dev libkf5kcmutils-dev libkf5declarative-dev libkf5coreaddons-dev libkf5doctools-dev libkf5xmlgui-dev libkf5crash-dev libkf5dbusaddons-dev extra-cmake-modules gettext qml-module-qt-labs-platform qml-module-qtqml-models2 qml-module-org-kde-kcm qml-module-qtquick-controls qml-module-qtquick-dialogs qml-module-qtquick-layouts qml-module-qtquick2 
-  - source /opt/qt*/bin/qt*-env.sh
+#  - source /opt/qt*/bin/qt*-env.sh
 
 script:
   - cmake . -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
